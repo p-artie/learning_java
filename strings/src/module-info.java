@@ -1,2 +1,3 @@
-module strings {
+module loops {
+	exports strings;
 }
