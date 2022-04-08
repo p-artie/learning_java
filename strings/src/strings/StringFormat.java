@@ -28,5 +28,7 @@ public class StringFormat {
 		.append("I'm a skydiver.");
 		
 		System.out.println(s);
+		
+		System.out.println("Here is some text.\tThat was a tab.\nThat was a newline.");
 	}
 }
