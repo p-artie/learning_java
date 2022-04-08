@@ -7,13 +7,17 @@ public class Thing {
 	public static String description;
 	public static int count = 0;
 	
+	public int id; 
+	
 	public Thing() {
+		
+		id = count;
 		count++;
 	}
 	
 	
 	public void showName() {
-		System.out.println(description + ": " + name);
+		System.out.println("Object id: " + id + ", " + description + ": " + name);
 	}
 	
 	public static void showInfo() {
