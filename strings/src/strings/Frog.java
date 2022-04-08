@@ -12,8 +12,8 @@ public class Frog {
 		return age;
 	}
 	
-	public void setName(String newName) {
-		name = newName;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	public void setAge(int newAge) {
