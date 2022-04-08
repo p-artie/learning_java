@@ -12,7 +12,7 @@ public class StringFormat {
 		
 		System.out.println(info);
 		
-		
+		// Bueno code
 		StringBuilder sb = new StringBuilder("");
 		
 		sb.append("My name is Sue.");
