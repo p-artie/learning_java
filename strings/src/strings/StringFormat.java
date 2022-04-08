@@ -20,5 +20,13 @@ public class StringFormat {
 		sb.append("I am a lion tamer.");
 		
 		System.out.println(sb);
-}
+		
+		StringBuilder s = new StringBuilder();
+		
+		s.append("My name is Roger.")
+		.append(" ")
+		.append("I'm a skydiver.");
+		
+		System.out.println(s);
+	}
 }
