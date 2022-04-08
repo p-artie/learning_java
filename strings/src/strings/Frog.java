@@ -19,4 +19,9 @@ public class Frog {
 	public void setAge(int newAge) {
 		age = newAge;
 	}
+	
+	public void setInfo(String name, int age) {
+		setName(name);
+		setAge(age);
+	}
 }
