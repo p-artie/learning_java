@@ -19,4 +19,8 @@ public class Car extends Madoo{
 	public void wipeWindShield() {
 		System.out.println("Wiping windshield...");
 	}
+	
+	public void showInfo() {
+		System.out.println("Car type: " + name);
+	}
 }

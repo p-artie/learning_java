@@ -11,5 +11,7 @@ public class TestMadoo {
 		car1.wipeWindShield();
 		
 		car1.stop();
+		
+		car1.showInfo();
 	}
 }
