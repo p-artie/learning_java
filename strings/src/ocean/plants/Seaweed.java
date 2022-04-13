@@ -1,4 +1,4 @@
-package ocean;
+package ocean.plants;
 
 public class Seaweed {
 
