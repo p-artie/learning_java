@@ -16,7 +16,7 @@ public class TestMachine {
 		machine2.start();
 		// Won't because machine does not have a snap method defined. machine2.snap();
 		
-		// Downcasting
+		// Downcasting works because machine3 was never a Machine object. 
 		
 		Machine machine3 = new Camera();
 		Camera camera2 = (Camera) machine3;
@@ -24,7 +24,7 @@ public class TestMachine {
 		
 		// Wont work --- runtime error. Downcasting error. 
 		Machine machine4 = new Machine();
-		Camera camera3 = (Camera) machine4;
+		// Camera camera3 = (Camera) machine4;
 		// camera3.start();
 		
 	}
