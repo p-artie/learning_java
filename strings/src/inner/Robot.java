@@ -36,9 +36,9 @@ public class Robot {
 			System.out.println("My name is " + name);
 		}
 		
-		Temp temp = new Temp();
-		temp.doSomething();
+		
 	}
 	
-
+	Temp temp = new Temp();
+	temp.doSomething();
 }
