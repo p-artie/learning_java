@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 
 public class WriteObjects {
 	public static void main(String[] args) {
@@ -15,9 +16,7 @@ public class WriteObjects {
 		
 		ArrayList<Person> peopleList = new ArrayList<Person>(Arrays.asList(people));
 		
-		try (FileOutputStream fs = new FileOutputStream("people.bin")) {
-			
-			ObjectOutputStream os = new ObjectOutputStream(fs);
+		try (FileOutputStream fs = new FileOutputStream("people.bin"); ObjectOutputStream os = new ObjectOutputStream(fs)) {
 			
 			os.writeObject(people);
 			
@@ -26,10 +25,14 @@ public class WriteObjects {
 			os.writeInt(peopleList.size());
 			
 			for(Person person: peopleList) {
+				
+				//Trying to set Id to 10 so that then when I read the object I know that I'm actually reading what I'm writing... but the object id is written as the orignal value instead of the value I mark
+				person.setId(10);
 				os.writeObject(person);
+				System.out.println(person);
+				
 			}
-			
-			os.close();
+		
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
