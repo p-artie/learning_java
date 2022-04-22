@@ -6,7 +6,6 @@ import java.io.IOException;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Random;
 
 public class WriteObjects {
 	public static void main(String[] args) {
@@ -16,8 +15,10 @@ public class WriteObjects {
 		
 		ArrayList<Person> peopleList = new ArrayList<Person>(Arrays.asList(people));
 		
-		try (FileOutputStream fs = new FileOutputStream("people.bin"); ObjectOutputStream os = new ObjectOutputStream(fs)) {
+		try (ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream("people.bin"))) {
 			
+			
+			Person.setCount(88);
 			os.writeObject(people);
 			
 			os.writeObject(peopleList);
