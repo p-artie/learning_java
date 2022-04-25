@@ -13,11 +13,7 @@ public class App {
 		map.put(4, "Four");
 		map.put(2, "Two");
 
-		
-		
-		String text = map.get(6);
-		
-		//System.out.println(text);
+		System.out.println(map.get(2));
 		
 		for(Map.Entry<Integer, String> entry: map.entrySet()) {
 			int key = entry.getKey();
