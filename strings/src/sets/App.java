@@ -69,5 +69,14 @@ public class App {
 		intersection.retainAll(set2);
 		
 		System.out.println(intersection);
+		
+		///Difference///
+		
+		System.out.println("---Difference---");
+		Set<String> dif = new HashSet<String>(set2);
+		
+		dif.removeAll(set1);
+		
+		System.out.println(dif);
 	}
 }
