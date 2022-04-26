@@ -9,11 +9,8 @@ public class App {
 
 	public static String[] vehicles = { "ambulance", "helicopter", "lifeboat" };
 
-	public static String[][] drivers = { 
-			{ "Fred", "Sue", "Pete" }, 
-			{ "Sue", "Richard", "Bob", "Fred" },
-			{ "Pete", "Mary", "Bob" }, 
-	};
+	public static String[][] drivers = { { "Fred", "Sue", "Pete" }, { "Sue", "Richard", "Bob", "Fred" },
+			{ "Pete", "Mary", "Bob" }, };
 
 	public static void main(String[] args) {
 
@@ -28,26 +25,24 @@ public class App {
 			for (String driver : driversList) {
 				driverSet.add(driver);
 			}
-
 			personnel.put(vehicle, driverSet);
 		}
-
 		/*
 		 * Example usage Set<String> driversList = personnel.get("helicopter");
 		 * 
 		 * for(String driver: driversList) { System.out.println(driver); }
 		 */
-
 		// Iterate through the whole thing
 		for (String vehicle : personnel.keySet()) {
 			Set<String> driversList = personnel.get(vehicle);
 			System.out.print(vehicle + ": ");
-			
+
 			for (String driver : driversList) {
-				System.out.print(driver+" ");
-				
+				System.out.print(driver + " ");
+
 			}
 			System.out.println("\n");
+			System.err.println("This is in red");
 		}
 
 	}
