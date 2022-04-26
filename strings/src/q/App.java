@@ -68,7 +68,7 @@ public class App {
 		System.out.println("Queue 2 poll: " + q2.poll());
 		System.out.println("Queue 2 poll: " + q2.poll());
 		System.out.println("Queue 2 poll: " + q2.poll());
-		
+
 	}
 
 }
