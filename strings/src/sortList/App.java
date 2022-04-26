@@ -6,6 +6,7 @@ import java.util.Comparator;
 import java.util.List;
 
 public class App {
+	@SuppressWarnings("unchecked")
 	public static void main(String[] args) {
 		
 		//Sorting Strings////
